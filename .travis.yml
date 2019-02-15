@@ -35,3 +35,12 @@ script:
 
 git:
   depth: 1
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: 283b0a80-79b0-4551-9422-f80aef94d10b
+    app: pagandopouco
+  on:
+    repo: magnocarvalho/adm-tcc
+  skip_cleanup: true
